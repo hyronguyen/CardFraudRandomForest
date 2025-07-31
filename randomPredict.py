@@ -28,10 +28,9 @@ def predict():
 
         gianLan = prediction[0].item() 
         xacXuat = probas[0][1].item()  
-        ghiChu = "Dự đoán gian lận với xác suất cao" if gianLan == 1 and xacXuat > 0.8 else "Không gian lận" 
+        ghiChu = "Dự đoán gian lận với xác suất cao" if gianLan == 1 else "Không gian lận" 
 
         return jsonify({
-            'code': gianLan,
             'gianLan': gianLan,
             'xacXuatDuDoan': xacXuat,
             'ghiChu': ghiChu 
