@@ -32,7 +32,7 @@ def predict():
 
         return jsonify({
             'gianLan': gianLan,
-            'xacXuatDuDoan': xacXuat,
+            'xacXuatDuDoan': xacXuat*100,
             'ghiChu': ghiChu 
         })
     except Exception as e:
