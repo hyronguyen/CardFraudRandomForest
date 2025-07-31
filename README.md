@@ -1,4 +1,7 @@
+Cài thư viện
 pip install -r requirements.txt
+
+Chạy
 python app.py
 
 Payload test gian lận
