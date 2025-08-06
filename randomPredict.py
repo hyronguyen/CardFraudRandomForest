@@ -3,10 +3,9 @@ import joblib
 import numpy as np
 import pandas as pd
 
-MODEL_PATH = 'model/rf_model_ori.joblib'
+MODEL_PATH = 'model/rf_model_v2.joblib'
 model = joblib.load(MODEL_PATH)
 
-# Các feature yêu cầu mà mô hình yêu cầu
 required_features = ['V1', 'V2', 'V3', 'V4', 'V7', 'V9', 'V10', 'V11', 'V12', 'V14', 'V16', 'V17', 'V18', 'Amount']
 
 def predict():
